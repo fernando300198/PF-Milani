@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.hero {
+    background-color: black;
+}
+
+.hero__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+
+.logo__imagen {
+    width: 230px;
+    height: 100px;
+}
+
+.header__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.header__right p {
+    font-family: 'Kanit', sans-serif;
+}
+
+.header__right .menu {
+    list-style: none;
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    gap: 2rem;
+    letter-spacing: 2px;
+}
+
+.hero__main {
+    display: flex;
+    padding-inline: 6rem;
+}
+
+.hero__main > div {
+    flex: 1;
+
+}
+
+.hero__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero__text h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px solid #ffffff;
+    width: max-content;
+    padding: .4rem;
+    padding-bottom: .4rem;
+    margin-bottom: 1rem;
+}
+
+.hero__text h2 {
+    font-family: 'Kanit', sans-serif, cursive;
+    font-size: 5rem;
+    line-height: 1;
+}
+
+.hero__text h3 {
+    font-family: 'Kanit', sans-serif, cursive;
+    font-size: 3rem;
+    color: red;
+}
+
+ .hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    position: relative;
+ }
+
+.hero__img img {
+    max-width: 100%;
+}
+
+/**** DESCRIPCION ****/
+
+.descripcion {
+    text-align: center;
+    padding-inline: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    font-size: large;
+}
+
+.descripcion h2 {
+    font-family: 'Kanit', sans-serif, cursive;
+    padding: 2rem;
+}
+
+
+.descripcion h3 {
+    font-family: 'Rubik', sans-serif;
+    padding: 2rem;
+    font-weight: 300;
+}
+
+.descripcion p {
+    font-family: 'Kanit', sans-serif, cursive;
+    padding: 2rem;
+    font-weight: bold;
+}
+
+.descripcion h2,
+.descripcion h3,
+.descripcion p {
+    color:black
+}
+
+
+/**** GRID ****/
+
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+         "item1 item2"
+         "item4 item3";
+    gap: 2rem;
+}
+
+.grid__item {
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 0.1rem;
+}
+
+.grid__item1 {
+    grid-area: item1;
+    background-image: url("../img/grid_big.jpg");
+    height: 425px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url("../img/grid_small1.jpeg");
+    height: 425px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url("../img/grid_small2.jpg");
+    font-family: 'Kanit', sans-serif;
+    height: 450px;
+}
+
+.grid__item4 {
+    grid-area: item4;
+    background-image: url("../img/grid_small3.jpg");
+    height: 400px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.grid__item3 h5,
+.grid__item3 h4 {
+    color: black;
+    font-size: 0.9rem;
+}
+
+.grid__item4 h5,
+.grid__item4 h4 {
+    color:black;
+    font-size: 0.87rem;
+}
+
+
+/**** DESTACADOS ****/
+
+.destacados {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.titles h4,
+.titles h2,
+.titles p {
+    color:black
+}
+
+.titles {
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.titles h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    background-color: red;
+    padding: .5rem 1rem .25rem 1rem;
+}
+
+.titles h2 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+}
+
+.titles p {
+    font-family: 'Rubik', sans-serif; 
+}
+
+.cards {
+    display: flex;
+}
+
+.card__productos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color:white;
+}
+
+.card__productos h4 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+}
+
+.card__productos p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card h4,
+.card p,
+.card a {
+    color: black;
+}
+
+.card h4 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.6rem;
+}
+
+.card p {
+    font-family: 'Rubik', sans-serif;
+    width: 85%;
+    text-align: center;
+}
+
+.card a {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    background-color: red;
+    padding: .75rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+/**** EXTRA ****/
+
+.extra {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.inner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px rgb(131, 126, 126);
+}
+
+.inner__right {
+    flex: 1.25;
+    min-width: 0;
+}
+
+.inner__right img {
+    max-width: 100%;
+}
+
+.inner__left {
+    padding-block: 2rem;
+    padding-right: 2rem;
+    flex: 1;
+    position: relative;
+}
+
+.inner__left h5,
+.inner__left h3,
+.inner__left p {
+    color: black;
+}
+
+.inner__left h5{
+    font-family: 'Kanit', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+.inner__left h3 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.0rem;
+}
+
+.inner__left p {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+}
+
+.dots {
+    display:flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dot-y {
+    background-color: red;
+}
+
+/**** CONTACTO ****/
+
+.contacto {
+    text-align: center;
+    padding: 3rem;
+    padding-inline: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    font-size: large;
+}
+
+.contacto__text h2 {
+    font-family: 'Kanit', sans-serif;
+}
+
+.contacto__text p {
+    font-family: 'Rubik', sans-serif;
+}
+
+.contacto__text h2,
+.contacto__text p {
+    color:black
+}
+    
+
+@media screen and (max-width: 576px) {
+    
+   .menu a {
+    flex-direction: column;
+    font-size: 19px;
+   }
+    
+    .hero__header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .header__right {
+        align-items: flex-start;
+        font-size: 13px;
+    }
+
+    .hero__img {
+        padding-top: 0;
+    }
+
+    .hero__img img {
+        max-width: 100%;
+    }
+
+    .hero__main{
+        flex-direction: column;
+        padding-inline: 1rem;
+        padding-top: 2rem;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .grid__item {
+        flex: 1;
+    }
+
+    .grid__item1,
+    .grid__item2,
+    .grid__item3,
+    .grid__item4 {
+        padding-bottom: 18rem;
+    }
+
+
+    .destacados {
+        padding: 2rem;
+    }
+
+    .titles {
+        padding-inline: 0;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .extra{
+        padding: 2rem;
+    }
+
+    .extra .inner {
+        flex-direction: column;
+    }
+
+    .extra .inner__right {
+        order: -1;
+    }
+
+    .dots {
+        bottom: 0;
+    }
+}
