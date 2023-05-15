@@ -1,0 +1,24 @@
+.contacto {
+    text-align: center;
+    padding: 3rem;
+    padding-inline: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    font-size: large;
+
+    .contacto__text h2 {
+        font-family: 'Kanit', sans-serif;
+    }
+    
+    .contacto__text p {
+        font-family: 'Rubik', sans-serif;
+    }
+    
+    .contacto__text h2,
+    .contacto__text p {
+        color:black
+    }
+}

@@ -7,7 +7,9 @@
     <title>FuelTech - Home</title>
     <meta name="description" content="Engine Management Systems">
     <meta name="keywords" content="fueltech, chiptuning, motores, electronica automotriz">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     
@@ -53,7 +55,7 @@
         </div>
         <div class="grid__item grid__item4">
             <h5>INTERFAZ PROGRAMABLE</h5>
-            <h4>ajustes individuales para inyección y encendido por cilindro<br>funciones exclusivas para facilitar el arranque del vehículo<br>permite editar mapas directamente en el módulo, sin necesidad de PC.</h4>
+            <h4>ajustes individuales para inyección y encendido por cilindro<br>funciones exclusivas para facilitar el arranque del vehículo<br>permite editar mapas directamente en el módulo.</h4>
         </div>
     </section>
 
@@ -64,29 +66,32 @@
             <p>Nuestros modelos exclusivos de FuelTech son el producto perfecto para proyectos que necesitan exprimir la maxima potencia del motor. Tiene un GearController integrado, acelerómetro (sensor de fuerza G) y giroscopio (sensor de inclinación), Además de todas las características de la línea PowerFT, como inyección y encendido secuenciales, corrección de sonda de circuito cerrado, el nuevo control de tracción activo, BoostController integrado, registrador de datos, control nitro, odómetro, control electrónico del acelerador, indicadores del inclinómetro, funciones de puesta en marcha y exclusivas para facilitar el arranque del vehiculo, mapas personalizados de inyeccion y mucho mas!</p>
         </div>
         <div class="cards">
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <img src="./img/FT450.png" alt="FT450">
                 <h4>FT 450</h4>
                 <p>La FuelTech Ft 450 es el producto perfecto para proyectos que necesitan un gran costo beneficio disfrutando de todas las características de la línea Power FT como inyección secuencial y encendido, corrección de sonda de circuito cerrado, el nuevo control activo de tracción, BoostController integrado, registrador de datos, control nitro, odómetro, funciones de puesta en marcha y más!</p>
-                <a href="#">COMPRAR AHORA</a>
+                <button type="button" class="btn btn-danger">COMPRAR AHORA</button>
+                <button type="button" class="btn btn-outline-secondary">COMPARAR</button>
             </div>
-            <div class="card">
+            <div class="card" data-aos="zoom-in">
                 <img src="./img/FT550.png" alt="FT550">
                 <h4>FT 550</h4>
                 <p>La FuelTech FT550 es el producto perfecto para proyectos que necesitan más recursos, tiene un GearController integrado, acelerómetro (sensor de fuerza G) y giroscopio (sensor de inclinación); Además de todas las características de la línea PowerFT, como inyección y encendido secuenciales, corrección de sonda de circuito cerrado, el nuevo control de tracción activo, BoostController integrado, registrador de datos, control nitro, odómetro, control electrónico del acelerador, indicadores del inclinómetro y más.</p>
-                <a href="#">COMPRAR AHORA</a>
+                <button type="button" class="btn btn-danger">COMPRAR AHORA</button>
+                <button type="button" class="btn btn-outline-secondary">COMPARAR</button>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <img src="./img/FT600.jpg" alt="FT600">
                 <h4>FT 600</h4>
                 <p>La FuelTech FT600 es la tope de gama, aloja 10 LED con color e intensidad configurables para su uso como SHIFT progresivo.
                 En el lateral, también cuenta con 4 LED más configurables como diagnóstico, alertas y estado de cualquier sensor. Su sofware permite editar mapas directamente en el módulo. Es capaz de gestionar la inyección secuencial y el encendido en motores de 1 a 12 cilindros. Con una selección de mapas simplificados para facilitar los ajustes iniciales o mapas 3D para aplicaciones extremadamente detalladas. Dispone de ajustes individuales para inyección y encendido, ademas de un control de inyección de circuito cerrado avanzado y eficiente, la FT600 traslada toda la seguridad necesaria al motor,tiene nuevas características como los nuevos conectores automotrices AMP SUPERSEAL que suman 68 pines (20 entradas para sensores y 32 salidas), acelerómetro y giroscopio, 2 puertos CAN y la función GearController, que permite la conexión directo desde el sensor de fuerza de la palanca y aportando nuevas posibilidades para hacer que el corte de la palanca de cambios sea aún más eficiente.</p>
-                <a href="#">COMPRAR AHORA</a>
+                <button type="button" class="btn btn-danger">COMPRAR AHORA</button>
+                <button type="button" class="btn btn-outline-secondary">COMPARAR</button>
             </div>
         </div>
     </section>
 
-    <section class="extra">
+    <section class="extra"  data-aos="zoom-in-up">
         <div class="inner">
             <div class="inner__left">
                 <h5>DESCUBRE</h5>
@@ -104,6 +109,12 @@
 
         </div>
     </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

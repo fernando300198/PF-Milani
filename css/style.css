@@ -14,6 +14,7 @@
 .menu a {
     text-decoration: none;
     font-family: 'Kanit', sans-serif;
+    color: white;
 }
 
 
@@ -53,6 +54,7 @@
     font-weight: 800;
     gap: 2rem;
     letter-spacing: 2px;
+    flex-wrap: wrap;
 }
 
 .hero__main {
@@ -155,6 +157,7 @@
          "item1 item2"
          "item4 item3";
     gap: 2rem;
+    transition: transform .4s;
 }
 
 .grid__item {
@@ -167,14 +170,14 @@
 .grid__item1 {
     grid-area: item1;
     background-image: url("../img/grid_big.jpg");
-    height: 425px;
+    height: 465px;
     font-family: 'Kanit', sans-serif;
 }
 
 .grid__item2 {
     grid-area: item2;
     background-image: url("../img/grid_small1.jpeg");
-    height: 425px;
+    height: 465px;
     font-family: 'Kanit', sans-serif;
 }
 
@@ -202,6 +205,15 @@
 .grid__item4 h4 {
     color:black;
     font-size: 0.87rem;
+}
+
+.grid__item2 h5,
+.grid__item2 h4 {
+    color: black;
+}
+
+.grid:hover {
+    transform: scale(1.1) translateY(-40px);
 }
 
 
@@ -248,6 +260,7 @@
     display: flex;
 }
 
+
 .card__productos {
     flex: 1;
     display: flex;
@@ -273,6 +286,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    transition: all .3s;
 }
 
 .card img {
@@ -303,6 +317,10 @@
     padding: .75rem 1rem;
     color: white;
     text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /**** EXTRA ****/
@@ -401,6 +419,7 @@
 .contacto__text p {
     color:black
 }
+
     
 
 @media screen and (max-width: 576px) {
@@ -409,11 +428,20 @@
     flex-direction: column;
     font-size: 19px;
    }
-    
-    .hero__header {
-        flex-direction: column;
-        gap: 1rem;
+
+   .header__right .menu,
+   .hero__header {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    gap: 1rem;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
     }
+    
 
     .header__right {
         align-items: flex-start;
@@ -444,11 +472,16 @@
         flex: 1;
     }
 
+    .grid__item2 h5,
+    .grid__item2 h4 {
+    font-size: 0.9rem;
+    }
+
     .grid__item1,
     .grid__item2,
     .grid__item3,
     .grid__item4 {
-        padding-bottom: 18rem;
+        padding-bottom: 15rem;
     }
 
 
@@ -479,4 +512,22 @@
     .dots {
         bottom: 0;
     }
+
+    .descripcion {
+        padding-inline: 0;
+        justify-content: center;
+    }
+
+    .card__productos img{
+    height: 300px;
+    }
 }
+
+/**** ANIMISTA ****/
+
+.hero__main {
+    -webkit-animation:flip-in-hor-bottom .5s cubic-bezier(.25,.46,.45,.94) both;animation:flip-in-hor-bottom .5s cubic-bezier(.25,.46,.45,.94) both;
+    animation-delay: .4s;
+}
+
+ @-webkit-keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes flip-in-hor-bottom{0%{-webkit-transform:rotateX(80deg);transform:rotateX(80deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}

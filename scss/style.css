@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital@1&family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.header .header__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+.header .header__right p {
+  font-family: "Kanit", sans-serif;
+}
+.header .header__right .menu {
+  list-style: none;
+  display: flex;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  gap: 2rem;
+  letter-spacing: 2px;
+  flex-wrap: wrap;
+}
+.header .header__right .menu .menu {
+  display: flex;
+}
+.header .header__right .menu .menu .menu a {
+  text-decoration: none;
+  font-family: "Kanit", sans-serif;
+  color: #ffffff;
+}
+
+.hero {
+  background-color: black;
+}
+.hero .hero__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.hero .logo__imagen {
+  width: 230px;
+  height: 100px;
+}
+.hero .hero__main {
+  display: flex;
+  padding-inline: 6rem;
+}
+.hero .hero__main > div {
+  flex: 1;
+}
+.hero .hero__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero .hero__text h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 2px solid #ffffff;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.4rem;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+.hero .hero__text h2 {
+  font-family: "Kanit", sans-serif, cursive;
+  font-size: 5rem;
+  line-height: 1;
+}
+.hero .hero__text h3 {
+  font-family: "Kanit", sans-serif, cursive;
+  font-size: 3rem;
+  color: red;
+}
+.hero .hero__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 3rem;
+  position: relative;
+}
+.hero .hero__img img {
+  max-width: 100%;
+}
+
+.descripcion {
+  text-align: center;
+  padding-inline: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: white;
+  font-size: large;
+}
+.descripcion .descripcion h2 {
+  font-family: "Kanit", sans-serif, cursive;
+  padding: 2rem;
+}
+.descripcion .descripcion h3 {
+  font-family: "Rubik", sans-serif;
+  padding: 2rem;
+  font-weight: 300;
+}
+.descripcion .descripcion p {
+  font-family: "Kanit", sans-serif, cursive;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.descripcion h2,
+.descripcion h3,
+.descripcion p {
+  color: black;
+}
+
+.grid {
+  padding: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "item1 item2" "item4 item3";
+  gap: 2rem;
+  transition: transform 0.4s;
+}
+.grid .grid__item {
+  border-radius: 1rem;
+  background-size: cover;
+  background-position: center center;
+  padding: 0.1rem;
+}
+.grid .grid__item1 {
+  grid-area: item1;
+  background-image: url("../img/grid_big.jpg");
+  height: 465px;
+  font-family: "Kanit", sans-serif;
+}
+.grid .grid__item2 {
+  grid-area: item2;
+  background-image: url("../img/grid_small1.jpeg");
+  height: 465px;
+  font-family: "Kanit", sans-serif;
+}
+.grid .grid__item3 {
+  grid-area: item3;
+  background-image: url("../img/grid_small2.jpg");
+  font-family: "Kanit", sans-serif;
+  height: 450px;
+}
+.grid .grid__item4 {
+  grid-area: item4;
+  background-image: url("../img/grid_small3.jpg");
+  height: 400px;
+  font-family: "Kanit", sans-serif;
+}
+.grid .grid__item3 h5,
+.grid .grid__item3 h4 {
+  color: black;
+  font-size: 0.9rem;
+}
+.grid .grid__item4 h5,
+.grid .grid__item4 h4 {
+  color: black;
+  font-size: 0.87rem;
+}
+.grid .grid__item2 h5,
+.grid .grid__item2 h4 {
+  color: black;
+}
+.grid .grid:hover {
+  transform: scale(1.1) translateY(-40px);
+}
+
+.titles {
+  text-align: center;
+  padding-inline: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.titles .titles h4,
+.titles .titles h2,
+.titles .titles p {
+  color: black;
+}
+.titles .titles h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  background-color: red;
+  padding: 0.5rem 1rem 0.25rem 1rem;
+}
+.titles .titles h2 {
+  font-family: "Kanit", sans-serif;
+  font-size: 3rem;
+}
+.titles .titles p {
+  font-family: "Rubik", sans-serif;
+}
+
+.cards {
+  display: flex;
+}
+.cards .card__productos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+}
+.cards .card__productos h4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 40px;
+}
+.cards .card__productos p {
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+}
+.cards .card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s;
+}
+.cards .card img {
+  max-width: 100%;
+}
+.cards .card h4,
+.cards .card p,
+.cards .card a {
+  color: black;
+}
+.cards .card h4 {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.6rem;
+}
+.cards .card p {
+  font-family: "Rubik", sans-serif;
+  width: 85%;
+  text-align: center;
+}
+.cards .card a {
+  font-family: "Kanit", sans-serif;
+  font-size: 1rem;
+  background-color: red;
+  padding: 0.75rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+.cards .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}/*# sourceMappingURL=style.css.map */

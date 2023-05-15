@@ -1,0 +1,62 @@
+.inner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px rgb(131, 126, 126);
+
+    .inner__right {
+        flex: 1.25;
+        min-width: 0;
+    }
+    
+    .inner__right img {
+        max-width: 100%;
+    }
+    
+    .inner__left {
+        padding-block: 2rem;
+        padding-right: 2rem;
+        flex: 1;
+        position: relative;
+    }
+    
+    .inner__left h5,
+    .inner__left h3,
+    .inner__left p {
+        color: black;
+    }
+    
+    .inner__left h5{
+        font-family: 'Kanit', sans-serif;
+        font-size: 3rem;
+        letter-spacing: 1px;
+    }
+    
+    .inner__left h3 {
+        font-family: 'Rubik', sans-serif;
+        font-size: 2.0rem;
+    }
+    
+    .inner__left p {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1.1rem;
+    }
+}
+
+.dots {
+    display:flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dot-y {
+    background-color: red;
+}

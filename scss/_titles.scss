@@ -1,0 +1,32 @@
+.titles {
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    .titles h4,
+    .titles h2,
+    .titles p {
+    color:black
+    }
+
+    .titles h4 {
+        font-family: 'Rubik', sans-serif;
+        font-weight: 300;
+        font-size: 1.2rem;
+        background-color: red;
+        padding: .5rem 1rem .25rem 1rem;
+    }
+    
+    .titles h2 {
+        font-family: 'Kanit', sans-serif;
+        font-size: 3rem;
+    }
+    
+    .titles p {
+        font-family: 'Rubik', sans-serif; 
+    }
+}
+

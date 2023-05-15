@@ -1,0 +1,35 @@
+.descripcion {
+    text-align: center;
+    padding-inline: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: white;
+    font-size: large;
+
+    .descripcion h2 {
+        font-family: 'Kanit', sans-serif, cursive;
+        padding: 2rem;
+    }
+    
+    
+    .descripcion h3 {
+        font-family: 'Rubik', sans-serif;
+        padding: 2rem;
+        font-weight: 300;
+    }
+    
+    .descripcion p {
+        font-family: 'Kanit', sans-serif, cursive;
+        padding: 2rem;
+        font-weight: bold;
+    }
+        
+}
+
+.descripcion h2,
+    .descripcion h3,
+    .descripcion p {
+        color:black
+    }
